@@ -1,0 +1,17 @@
+{
+  "name": "jsonserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "json-server --watch db.json --port 3001 --host 0.0.0.0",
+    "start:pm2": "pm2 start bun --name mock-server -- run server"
+  },
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
